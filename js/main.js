@@ -13,7 +13,6 @@ function showLoveLetter() {
 
 async function startApp() {
   initContent(CONFIG);
-  initFallingPhotos(CONFIG);
 
   const staticCanvas = initCanvas("static-canvas");
   const groundCanvas = initCanvas("ground-canvas");

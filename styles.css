@@ -9,7 +9,6 @@
   --stage-w: 1100px;
   --stage-h: 680px;
   --tree-shift-x: 260px;
-  --side-w: max(0px, calc((100vw - var(--stage-w)) / 2));
 }
 
 /* ===========================
@@ -43,31 +42,6 @@ body {
   max-height: 100svh;
   overflow: hidden;
   contain: layout size style;
-  z-index: 1;
-}
-
-/* ===========================
-   Side Falling Photos
-   =========================== */
-#photos-left,
-#photos-right {
-  position: fixed;
-  top: 0;
-  width: var(--side-w);
-  height: 100vh;
-  height: 100svh;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-#photos-left { left: 0; }
-#photos-right { right: 0; }
-
-#photos-left canvas,
-#photos-right canvas {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 
 #main {
