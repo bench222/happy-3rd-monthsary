@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Letter">
+  <meta name="author" content="qzydustin">
+  <meta name="theme-color" content="#ffe">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Happy 3rd monthsary, Tin! | 情书">
+  <meta property="og:description" content="Letter">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://love.qzydustin.com">
+
+  <!-- Title & Resources -->
+  <title>Love Letter | 情书</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script src="config.js"></script>
+</head>
+<body>
+  <!-- Background Music -->
+  <audio loop id="bgm" preload="auto" aria-label="Background music">
+    <source src="bgm2.mp3" type="audio/mpeg">
+  </audio>
+  
+  <!-- Falling Photos (side margins) -->
+  <div id="photos-left"><canvas id="photos-left-canvas"></canvas></div>
+  <div id="photos-right"><canvas id="photos-right-canvas"></canvas></div>
+
+  <!-- Main Container -->
+  <div id="viewport">
+    <div id="main">
+      <!-- Love Letter Content -->
+      <div id="letter" role="article"></div>
+
+      <!-- Ground Canvas -->
+      <canvas id="ground-canvas" aria-hidden="true"></canvas>
+
+      <!-- Static Canvas (tree) -->
+      <canvas id="static-canvas" aria-hidden="true"></canvas>
+
+      <!-- Dynamic Canvas (falling hearts) -->
+      <canvas id="canvas" aria-label="Animated tree with hearts"></canvas>
+    </div>
+  </div>
+  
+  <!-- Main Script -->
+  <script src="js/geometry.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/tree.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/fallingPhotos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
